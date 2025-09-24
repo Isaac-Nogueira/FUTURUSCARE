@@ -1,4 +1,3 @@
-
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -186,6 +185,54 @@ body {
 .achievement h3 {
   font-size: 2rem;
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    /* Navbar Mobile */
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .logo img {
+        max-height: 50px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-links.mobile-active {
+        left: 0;
+    }
+    
+    .nav-links li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .buttons {
+        display: none;
+    }
 }
 
 /* Responsivo */
@@ -417,4 +464,5 @@ body {
 
 .footer-bottom .heart {
   color:#c03ee7;
+
 }
