@@ -120,3 +120,21 @@ html, body {
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex: none;
+  }
+
+  .left {
+    height: 150px;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  .form-button, .submit-button {
+    width: 100%;
+  }
+}
